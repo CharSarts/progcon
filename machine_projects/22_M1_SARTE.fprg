@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-15 10:27:07 AM"/>
+        <attribute name="created" value="UmFtcztERVNLVE9QLTM5NTJVOEI7MjAxOS0xMC0yOTswOTo0OTozMyBBTTsyNjg1"/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLTM5NTJVOEI7MjAxOS0xMC0yOTsxMDowODoxOCBBTTszOzI3ODU="/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLTFTSEVPRks7MjAxOS0xMS0xNTsxMDoyNzowNyBBTTs2OzI4NjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Num1" type="Integer" array="False" size=""/>
+            <declare name="Num2" type="Integer" array="False" size=""/>
+            <declare name="Sum" type="Integer" array="False" size=""/>
+            <declare name="answer" type="Boolean" array="False" size=""/>
+            <assign variable="answer" expression="True"/>
+            <declare name="Again" type="String" array="False" size=""/>
+            <output expression="&quot;Welcome to this program which adds two numbers!&quot;" newline="True"/>
+            <while expression="answer == True">
+                <output expression="&quot;Enter the first number.&quot;" newline="True"/>
+                <input variable="Num1"/>
+                <output expression="&quot;Enter Second number&quot;" newline="True"/>
+                <input variable="Num2"/>
+                <assign variable="Sum" expression="Num1 + Num2"/>
+                <output expression="&quot;The Sum is:&quot; &amp; Sum" newline="True"/>
+                <output expression="&quot;Would you like to try again?&quot;" newline="True"/>
+                <input variable="Again"/>
+                <if expression="Again == &quot;yes&quot;">
+                    <then>
+                        <output expression="&quot;Okay. If that's what you want!&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Okay. Thank you!&quot;" newline="True"/>
+                        <breakpoint/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
