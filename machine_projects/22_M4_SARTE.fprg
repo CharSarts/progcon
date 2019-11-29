@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Iver PC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-29 10:46:22 AM"/>
+        <attribute name="created" value="SXZlciBQQztERVNLVE9QLThLSUdLU1I7MjAxOS0xMS0yOTswOTo0Mjo0NCBBTTsyOTYw"/>
+        <attribute name="edited" value="SXZlciBQQztERVNLVE9QLThLSUdLU1I7MjAxOS0xMS0yOTsxMDo0NjoyMiBBTTs1OzMwNjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Hi! Welcome to this program.&quot;" newline="True"/>
+            <output expression="&quot;Please input your grade in order for you to know what is the equivalent grade for that.&quot;" newline="True"/>
+            <declare name="Grade" type="Integer" array="False" size=""/>
+            <declare name="Again" type="Boolean" array="False" size=""/>
+            <assign variable="Again" expression="True"/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <while expression="Again == True">
+                <input variable="Grade"/>
+                <if expression="Grade&gt;94">
+                    <then>
+                        <output expression="&quot;Amazing! You have the grade of 4.0&quot;" newline="True"/>
+                        <output expression="&quot;Would you like to try again? Yes or No?&quot;" newline="True"/>
+                        <input variable="Answer"/>
+                        <if expression="Answer == &quot;Yes&quot;">
+                            <then>
+                                <output expression="&quot;Okay! Input another grade&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Okay! Thank you.&quot;" newline="True"/>
+                                <breakpoint/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="Grade&gt;90">
+                            <then>
+                                <output expression="&quot;Good job! You have the grade of 3.5&quot;" newline="True"/>
+                                <output expression="&quot;Would you like to try again? Yes or No?&quot;" newline="True"/>
+                                <input variable="Answer"/>
+                                <if expression="Answer == &quot;Yes&quot;">
+                                    <then>
+                                        <output expression="&quot;Okay! Input another grade&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;Okay! Thank you.&quot;" newline="True"/>
+                                        <breakpoint/>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <if expression="Grade&gt;86">
+                                    <then>
+                                        <output expression="&quot;Congrats! You have the grade of 3.0&quot;" newline="True"/>
+                                        <output expression="&quot;Would you like to try again? Yes or No?&quot;" newline="True"/>
+                                        <input variable="Answer"/>
+                                        <if expression="Answer == &quot;Yes&quot;">
+                                            <then>
+                                                <output expression="&quot;Okay! Input another grade&quot;" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <output expression="&quot;Okay! Thank you.&quot;" newline="True"/>
+                                                <breakpoint/>
+                                            </else>
+                                        </if>
+                                    </then>
+                                    <else>
+                                        <if expression="Grade&gt;82">
+                                            <then>
+                                                <output expression="&quot;Great! You have the grade of 2.5&quot;" newline="True"/>
+                                                <output expression="&quot;Would you like to try again? Yes or No?&quot;" newline="True"/>
+                                                <input variable="Answer"/>
+                                                <if expression="Answer == &quot;Yes&quot;">
+                                                    <then>
+                                                        <output expression="&quot;Okay! Input another grade&quot;" newline="True"/>
+                                                    </then>
+                                                    <else>
+                                                        <output expression="&quot;Okay! Thank you.&quot;" newline="True"/>
+                                                        <breakpoint/>
+                                                    </else>
+                                                </if>
+                                            </then>
+                                            <else>
+                                                <if expression="Grade&gt;78">
+                                                    <then>
+                                                        <output expression="&quot;It's okay. You still have the grade of 2.0&quot;" newline="True"/>
+                                                        <output expression="&quot;Would you like to try again? Yes or No?&quot;" newline="True"/>
+                                                        <input variable="Answer"/>
+                                                        <if expression="Answer == &quot;Yes&quot;">
+                                                            <then>
+                                                                <output expression="&quot;Okay! Input another grade&quot;" newline="True"/>
+                                                            </then>
+                                                            <else>
+                                                                <output expression="&quot;Okay! Thank you.&quot;" newline="True"/>
+                                                                <breakpoint/>
+                                                            </else>
+                                                        </if>
+                                                    </then>
+                                                    <else>
+                                                        <if expression="Grade&gt;74">
+                                                            <then>
+                                                                <output expression="&quot;Bawi next time! You have the equivalent grade of 1.5&quot;" newline="True"/>
+                                                                <output expression="&quot;Would you like to try again? Yes or No?&quot;" newline="True"/>
+                                                                <input variable="Answer"/>
+                                                                <if expression="Answer == &quot;Yes&quot;">
+                                                                    <then>
+                                                                        <output expression="&quot;Okay! Input another grade&quot;" newline="True"/>
+                                                                    </then>
+                                                                    <else>
+                                                                        <output expression="&quot;Okay! Thank you.&quot;" newline="True"/>
+                                                                        <breakpoint/>
+                                                                    </else>
+                                                                </if>
+                                                            </then>
+                                                            <else>
+                                                                <if expression="Grade&gt;69">
+                                                                    <then>
+                                                                        <output expression="&quot;Aral pa! You have the equivalent grade of 1.0&quot;" newline="True"/>
+                                                                        <output expression="&quot;Would you like to try again? Yes or No?&quot;" newline="True"/>
+                                                                        <input variable="Answer"/>
+                                                                        <if expression="Answer == &quot;Yes&quot;">
+                                                                            <then>
+                                                                                <output expression="&quot;Okay! Input another grade&quot;" newline="True"/>
+                                                                            </then>
+                                                                            <else>
+                                                                                <output expression="&quot;Okay! Thank you.&quot;" newline="True"/>
+                                                                                <breakpoint/>
+                                                                            </else>
+                                                                        </if>
+                                                                    </then>
+                                                                    <else>
+                                                                        <if expression="Grade&lt;70">
+                                                                            <then>
+                                                                                <output expression="&quot;Too bad but not too late, aral na! You have an 'R' grade&quot;" newline="True"/>
+                                                                                <output expression="&quot;Would you like to try again? Yes or No?&quot;" newline="True"/>
+                                                                                <input variable="Answer"/>
+                                                                                <if expression="Answer == &quot;Yes&quot;">
+                                                                                    <then>
+                                                                                        <output expression="&quot;Okay! Input another grade&quot;" newline="True"/>
+                                                                                    </then>
+                                                                                    <else>
+                                                                                        <output expression="&quot;Okay! Thank you.&quot;" newline="True"/>
+                                                                                        <breakpoint/>
+                                                                                    </else>
+                                                                                </if>
+                                                                            </then>
+                                                                            <else>
+                                                                                <breakpoint/>
+                                                                            </else>
+                                                                        </if>
+                                                                    </else>
+                                                                </if>
+                                                            </else>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
