@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 10:51:07 AM"/>
+        <attribute name="created" value="UmFtcztERVNLVE9QLVQ1M0ZCMTQ7MjAxOS0xMi0yMDsxMDo0Nzo0OSBBTTsyNjgy"/>
+        <attribute name="edited" value="YWRtaW47REVTS1RPUC1HQU5NQ1FTOzIwMjAtMDEtMTY7MTE6MDk6MjEgUE07MjszMDA1"/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLURMM0wzNVI7MjAyMC0wMS0xNzsxMDoyNTowMCBBTTsxOzI4MDE="/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLVQ1M0ZCMTQ7MjAyMC0wMS0xNzsxMDo1MTowNyBBTTsyOzI3NzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Welcome! This program will know the hotness or coldness of a temperature through converting the degree Celsius to degree Fahrenheit.&quot;" newline="True"/>
+            <output expression="&quot;Del Rosario, Bernard John ; &quot; &amp; &quot;Magnaye, Connie Anne ; &quot; &amp; &quot;Sarte, Charlize May&quot;" newline="True"/>
+            <declare name="Celsius" type="Real" array="False" size=""/>
+            <declare name="Fahrenheit" type="Real" array="False" size=""/>
+            <declare name="Loop" type="Boolean" array="False" size=""/>
+            <assign variable="Loop" expression="True"/>
+            <declare name="Again" type="String" array="False" size=""/>
+            <while expression="Loop == True">
+                <output expression="&quot;Input the degree Celsius.&quot;" newline="True"/>
+                <input variable="Celsius"/>
+                <assign variable="Fahrenheit" expression="Celsius * 1.8 + 32"/>
+                <output expression="&quot;The &quot; &amp; Celsius &amp; &quot; &#176; C is equivalent to &quot; &amp; Fahrenheit &amp; &quot; &#176; Fahrenheit&quot;" newline="True"/>
+                <output expression="&quot;Would you like to try again? Yes or No?&quot;" newline="True"/>
+                <input variable="Again"/>
+                <if expression="Again == &quot;Yes&quot;">
+                    <then/>
+                    <else>
+                        <output expression="&quot;Okay. Thank you!&quot;" newline="True"/>
+                        <breakpoint/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

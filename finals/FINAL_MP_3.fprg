@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 10:50:30 AM"/>
+        <attribute name="created" value="UmFtcztERVNLVE9QLVQ1M0ZCMTQ7MjAxOS0xMi0yMDswOTo1NTo0NyBBTTsyNjg3"/>
+        <attribute name="edited" value="YWRtaW47REVTS1RPUC1HQU5NQ1FTOzIwMjAtMDEtMTY7MTE6MDk6MDMgUE07MjszMDA1"/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLURMM0wzNVI7MjAyMC0wMS0xNzsxMDoyNDo0MSBBTTsxOzI4MDU="/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLVQ1M0ZCMTQ7MjAyMC0wMS0xNzsxMDo1MDozMCBBTTsyOzI3NzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Hi! This program will help you to know what is the equivalent inches for every feet you will input.&quot;" newline="True"/>
+            <output expression="&quot;Del Rosario,Bernard John ; &quot; &amp; &quot;Magnaye,Connie Anne ; &quot; &amp; &quot;Sarte Charlize May&quot;" newline="True"/>
+            <declare name="Feet" type="Integer" array="False" size=""/>
+            <declare name="Inches" type="Integer" array="False" size=""/>
+            <declare name="Loop" type="Boolean" array="False" size=""/>
+            <assign variable="Loop" expression="True"/>
+            <declare name="Again" type="String" array="False" size=""/>
+            <while expression="Loop == True">
+                <output expression="&quot;Input the measurement by foot/feet.&quot;" newline="True"/>
+                <input variable="Feet"/>
+                <assign variable="Inches" expression="Feet * 12"/>
+                <output expression="Feet &amp; &quot; foot/feet is equivalent to &quot; &amp; Inches &amp; &quot; inch/es.&quot;" newline="True"/>
+                <output expression="&quot;Would you like to try again? Input 'Y' or 'N'&quot;" newline="True"/>
+                <input variable="Again"/>
+                <if expression="Again == &quot;Y&quot;">
+                    <then/>
+                    <else>
+                        <output expression="&quot;Okay. Thank you!&quot;" newline="True"/>
+                        <breakpoint/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

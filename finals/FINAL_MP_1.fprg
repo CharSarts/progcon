@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 10:46:55 AM"/>
+        <attribute name="created" value="UmFtcztERVNLVE9QLVQ1M0ZCMTQ7MjAxOS0xMi0yMDswOTozNDo1MyBBTTsyNjgx"/>
+        <attribute name="edited" value="YWRtaW47REVTS1RPUC1HQU5NQ1FTOzIwMjAtMDEtMTY7MDk6Mjg6MzIgUE07MTszMDE0"/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLURMM0wzNVI7MjAyMC0wMS0xNzsxMDoyMzo1OCBBTTsxOzI4MTI="/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLVQ1M0ZCMTQ7MjAyMC0wMS0xNzsxMDo0Njo1NSBBTTs0OzI3ODU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Welcome to this program which identifies the number if it is an ODD or EVEN number.&quot;" newline="True"/>
+            <output expression="&quot;Del Rosario,Bernard John ; &quot; &amp; &quot;Magnaye,Connie Anne ; &quot; &amp; &quot;Sarte Charlize May&quot;" newline="True"/>
+            <declare name="Num1" type="Real" array="False" size=""/>
+            <declare name="Loop" type="Boolean" array="False" size=""/>
+            <assign variable="Loop" expression="True"/>
+            <declare name="Again" type="String" array="False" size=""/>
+            <while expression="Loop == True">
+                <output expression="&quot;Please input a number.&quot;" newline="True"/>
+                <input variable="Num1"/>
+                <if expression="Num1 % 2 == 0">
+                    <then>
+                        <output expression="Num1 &amp; &quot; is an EVEN number.&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="Num1 &amp; &quot; is an ODD number.&quot;" newline="True"/>
+                    </else>
+                </if>
+                <output expression="&quot;Would you like to do it again? Input YES or NO.&quot;" newline="True"/>
+                <input variable="Again"/>
+                <if expression="Again == &quot;YES&quot;">
+                    <then/>
+                    <else>
+                        <output expression="&quot;Okay. Thank you!&quot;" newline="True"/>
+                        <breakpoint/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Name"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 10:58:52 AM"/>
+        <attribute name="created" value="TmFtZTtMQVBUT1AtUjI2SDhQRk47MjAyMC0wMS0wNjswMTo1ODoyNyBQTTsyNzE0"/>
+        <attribute name="edited" value="TmFtZTtMQVBUT1AtUjI2SDhQRk47MjAyMC0wMS0wNjswMjoyNDo1NCBQTTsxOzI4MTY="/>
+        <attribute name="edited" value="YWRtaW47REVTS1RPUC1HQU5NQ1FTOzIwMjAtMDEtMTY7MTE6MDc6NDYgUE07MzszMDEx"/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLURMM0wzNVI7MjAyMC0wMS0xNzsxMDoyNjoyOSBBTTsxOzI4MTM="/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLVQ1M0ZCMTQ7MjAyMC0wMS0xNzsxMDo1ODo1MiBBTTsxOzI3ODI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Welcome to this program which reads in numbers until the number -999 is encountered and the sum of all number read until this point.&quot;" newline="True"/>
+            <output expression="&quot;Del Rosario, Bernard John ; &quot; &amp; &quot;Magnaye, Connie Anne ; &quot; &amp; &quot;Sarte, Charlize May&quot;" newline="True"/>
+            <declare name="num" type="Real" array="False" size=""/>
+            <declare name="Sum" type="Real" array="False" size=""/>
+            <declare name="again" type="String" array="False" size=""/>
+            <declare name="Loop" type="Boolean" array="False" size=""/>
+            <assign variable="Loop" expression="True"/>
+            <assign variable="Sum" expression="0"/>
+            <while expression="Loop == True">
+                <output expression="&quot;Insert a number.&quot;" newline="True"/>
+                <input variable="num"/>
+                <if expression="num = -999">
+                    <then>
+                        <output expression="&quot;The sum is &quot; &amp; Sum" newline="True"/>
+                        <output expression="&quot;Do you want to try again? 'YES' or 'NO'?&quot;" newline="True"/>
+                        <input variable="again"/>
+                        <if expression="again = &quot;YES&quot;">
+                            <then/>
+                            <else>
+                                <output expression="&quot;Okay. Thank you!&quot;" newline="True"/>
+                                <breakpoint/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <assign variable="Sum" expression="Sum + Num"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 10:52:58 AM"/>
+        <attribute name="created" value="UmFtcztERVNLVE9QLVQ1M0ZCMTQ7MjAxOS0xMi0yMDsxMTowMTo0MiBBTTsyNjY2"/>
+        <attribute name="edited" value="YWRtaW47REVTS1RPUC1HQU5NQ1FTOzIwMjAtMDEtMTY7MTE6MTE6MDYgUE07NTszMDA0"/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLURMM0wzNVI7MjAyMC0wMS0xNzsxMDoyNjowNSBBTTsxOzI4MDc="/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLVQ1M0ZCMTQ7MjAyMC0wMS0xNzsxMDo1Mjo1OCBBTTsyOzI3ODM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Hi! This program will let us know the equivalent of Peso to Dollar and vice versa. Let's get started!&quot;" newline="True"/>
+            <output expression="&quot;Del Rosario, Bernard John ; &quot; &amp; &quot;Magnaye, Connie Anne ; &quot; &amp; &quot;Sarte, Charlize May&quot;" newline="True"/>
+            <declare name="Peso" type="Real" array="False" size=""/>
+            <declare name="Dollar" type="Real" array="False" size=""/>
+            <declare name="FinalAnswer" type="Real" array="False" size=""/>
+            <declare name="Again" type="String" array="False" size=""/>
+            <declare name="Loop" type="Boolean" array="False" size=""/>
+            <assign variable="Loop" expression="True"/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <while expression="Loop == True">
+                <output expression="&quot;Peso to Dollar? or Dollar to Peso?&quot;" newline="True"/>
+                <input variable="Answer"/>
+                <if expression="Answer == &quot;Peso to Dollar&quot;">
+                    <then>
+                        <output expression="&quot;Input the amount of Peso&quot;" newline="True"/>
+                        <input variable="Peso"/>
+                        <assign variable="FinalAnswer" expression="Peso * 0.019559"/>
+                        <output expression="&quot;&#8369; &quot; &amp; Peso &amp; &quot; = &quot; &amp; &quot; $ &quot; &amp; FinalAnswer" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Input the amount of Dollar&quot;" newline="True"/>
+                        <input variable="Dollar"/>
+                        <assign variable="FinalAnswer" expression="Dollar * 51.1250"/>
+                        <output expression="&quot;$ &quot; &amp; Dollar &amp; &quot; = &quot; &amp; &quot; &#8369; &quot; &amp; FinalAnswer" newline="True"/>
+                    </else>
+                </if>
+                <output expression="&quot;Want to try again? Yes or No?&quot;" newline="True"/>
+                <input variable="Again"/>
+                <if expression="Again == &quot;Yes&quot;">
+                    <then>
+                        <output expression="&quot;Okay!&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Thank You!&quot;" newline="True"/>
+                        <breakpoint/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

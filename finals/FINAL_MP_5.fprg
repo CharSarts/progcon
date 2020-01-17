@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="client"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 10:51:36 AM"/>
+        <attribute name="created" value="Y2xpZW50O1BDLTE4OzIwMjAtMDEtMTY7MDk6MTQ6MTYgUE07MjIxMw=="/>
+        <attribute name="edited" value="Y2xpZW50O1BDLTE4OzIwMjAtMDEtMTY7MTA6MDQ6MTQgUE07MTsyMzEw"/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLVQ1M0ZCMTQ7MjAyMC0wMS0xNzsxMDo1MTozNiBBTTs5OzI3ODU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Welcome to this program that computes the Discounted price.&quot;" newline="True"/>
+            <output expression="&quot;Del Rosario, Bernard ; &quot; &amp; &quot;Magnaye, Connie Anne ; &quot; &amp; &quot;Sarte, Charlize May&quot;" newline="True"/>
+            <declare name="OrigPrice" type="Real" array="False" size=""/>
+            <declare name="DiscRate" type="Real" array="False" size=""/>
+            <declare name="DiscPrice" type="Real" array="False" size=""/>
+            <declare name="Loop" type="Boolean" array="False" size=""/>
+            <assign variable="Loop" expression="True"/>
+            <declare name="Again" type="String" array="False" size=""/>
+            <while expression="Loop == True">
+                <output expression="&quot;Input the Original Price.&quot;" newline="True"/>
+                <input variable="OrigPrice"/>
+                <output expression="&quot;Please input the discounted rate. For example, 50% input the number 50&quot;" newline="True"/>
+                <input variable="DiscRate"/>
+                <assign variable="DiscPrice" expression="OrigPrice-(OrigPrice*(DiscRate/100))"/>
+                <output expression="DiscPrice &amp; &quot; is the Discounted price.&quot;" newline="True"/>
+                <output expression="&quot;Would you like to try again? 'Y' or 'N'?&quot;" newline="True"/>
+                <input variable="Again"/>
+                <if expression="Again = &quot;Y&quot;">
+                    <then/>
+                    <else>
+                        <output expression="&quot;Okay. Thank You!&quot;" newline="True"/>
+                        <breakpoint/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

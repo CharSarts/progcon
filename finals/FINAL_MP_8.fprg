@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Name"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 10:59:36 AM"/>
+        <attribute name="created" value="TmFtZTtMQVBUT1AtUjI2SDhQRk47MjAyMC0wMS0wNjswMjoyNjozMCBQTTsyNzA0"/>
+        <attribute name="edited" value="TmFtZTtMQVBUT1AtUjI2SDhQRk47MjAyMC0wMS0wNjswMjo0MzoxNiBQTTsxOzI4MTU="/>
+        <attribute name="edited" value="YWRtaW47REVTS1RPUC1HQU5NQ1FTOzIwMjAtMDEtMTY7MTA6NTk6MDcgUE07NDszMDE1"/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLURMM0wzNVI7MjAyMC0wMS0xNzsxMDoyNzo0MSBBTTsxOzI4MDg="/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLVQ1M0ZCMTQ7MjAyMC0wMS0xNzsxMDo1OTozNiBBTTsyOzI3ODY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Welcome to this program which converts the time into Military time. Let's get started!&quot;" newline="True"/>
+            <output expression="&quot;Del Rosario, Bernard John ; &quot; &amp; &quot;Magnaye, Connie Anne ; &quot; &amp; &quot;Sarte, Charlize May&quot;" newline="True"/>
+            <declare name="TZ" type="String" array="False" size=""/>
+            <declare name="hour" type="Integer" array="False" size=""/>
+            <declare name="minutes" type="Integer" array="False" size=""/>
+            <declare name="Loop" type="Boolean" array="False" size=""/>
+            <assign variable="Loop" expression="True"/>
+            <declare name="Again" type="String" array="False" size=""/>
+            <while expression="Loop == True">
+                <output expression="&quot;What is the hour in the ordinary time?&quot;" newline="True"/>
+                <input variable="hour"/>
+                <output expression="&quot;What is the minutes in the ordinary time?&quot;" newline="True"/>
+                <input variable="minutes"/>
+                <output expression="&quot;Is it 'AM' or 'PM'?&quot;" newline="True"/>
+                <input variable="TZ"/>
+                <if expression="TZ = &quot;AM&quot;">
+                    <then>
+                        <output expression="&quot;The equivalent military time for that is &quot; &amp; hour&amp;minutes" newline="True"/>
+                    </then>
+                    <else>
+                        <assign variable="hour" expression="hour + 12"/>
+                        <output expression="&quot;The equivalent military time for that is &quot; &amp; hour&amp;minutes" newline="True"/>
+                    </else>
+                </if>
+                <output expression="&quot;Would you like to try again? 'Y' or 'N'?&quot;" newline="True"/>
+                <input variable="Again"/>
+                <if expression="Again == &quot;Y&quot;">
+                    <then/>
+                    <else>
+                        <output expression="&quot;Aye! Aye! Roger that.&quot;" newline="True"/>
+                        <breakpoint/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
